@@ -15,6 +15,11 @@ public class Ciudad {
     }
 
     
+    public Ciudad(String nombre_ciudad, int id_region) {
+        this.nombre_ciudad = nombre_ciudad;
+        this.id_region = id_region;
+    }
+
     public Ciudad(String nombre_ciudad) {
         this.nombre_ciudad = nombre_ciudad;
     }

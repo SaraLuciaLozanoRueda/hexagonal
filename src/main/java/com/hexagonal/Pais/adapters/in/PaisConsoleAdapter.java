@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import com.hexagonal.Pais.application.PaisService;
 import com.hexagonal.Pais.domain.models.Pais;
-import com.hexagonal.menu.Menu;
 
 public class PaisConsoleAdapter {
     private final PaisService paisService;
@@ -66,8 +65,8 @@ public class PaisConsoleAdapter {
                     break;
 
                 case 6:
-                System.out.println("Volviendo al menu principal");
-                Menu.menu();
+                    sc.close();
+                    System.exit(0);
                     break;
 
                 default:
